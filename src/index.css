@@ -24,11 +24,12 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
+  padding: 0;  
   min-height: 100vh;
-}
+  width: 100%;  
+  overflow-x: hidden;  
+  
+}  
 
 h1 {
   font-size: 3.2em;
@@ -36,15 +37,16 @@ h1 {
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+    border-radius: 8px;
+  border: 1px solid transparent; 
+  /* padding: 0.6em 1.2em; */
+  /* font-size: larger; */
   font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+  font-family: inherit; 
+   background-color: #1a1a1a; 
   cursor: pointer;
   transition: border-color 0.25s;
+  
 }
 
 button:focus,
@@ -63,4 +65,11 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+/* Add this to ensure all containers respect width limits */
+#root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }

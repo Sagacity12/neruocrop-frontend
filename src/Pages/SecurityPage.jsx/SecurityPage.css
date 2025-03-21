@@ -1,0 +1,259 @@
+.security-privacy-container {
+    padding: 30px;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .security-header {
+    margin-bottom: 30px;
+  }
+  
+  .security-header h1 {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  
+  .security-icon {
+    margin-right: 10px;
+    color: green;
+  }
+  
+  .subtitle {
+    color: #6b7280;
+    margin-top: 5px;
+  }
+  
+  .back-button {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    color: green;
+    cursor: pointer;
+    padding: 0;
+    font-size: 14px;
+  }
+  
+  .back-button span {
+    margin-left: 5px;
+  }
+  
+  .security-nav {
+    display: flex;
+    border-bottom: 1px solid #e5e7eb;
+    margin-bottom: 30px;
+  }
+  
+  .security-nav-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    cursor: pointer;
+    color: #6b7280;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s;
+  }
+  
+  .security-nav-item.active {
+    color: green;
+    border-bottom: 2px solid green;
+    font-weight: 500;
+  }
+  
+  .security-nav-item:hover:not(.active) {
+    color: #4b5563;
+    background-color: #f9fafb;
+  }
+  
+  .security-nav-item span {
+    margin-left: 8px;
+  }
+  
+  .security-section {
+    padding: 10px 0;
+  }
+  
+  .security-section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .security-section p {
+    color: #6b7280;
+    margin-bottom: 20px;
+  }
+  
+  .password-form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .password-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  
+  .password-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  .password-form small {
+    display: block;
+    margin-top: 5px;
+    color: #6b7280;
+    font-size: 12px;
+  }
+  
+  .primary-button {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .primary-button:hover {
+    background-color: green;
+  }
+  
+  .setting-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .setting-option:last-child {
+    border-bottom: none;
+  }
+  
+  .setting-info h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .setting-info p {
+    color: #6b7280;
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  /* Toggle Switch Styles */
+  .toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+  }
+  
+  .toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  
+  .toggle-slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .toggle-slider {
+    background-color: green;
+  }
+  
+  input:checked + .toggle-slider:before {
+    transform: translateX(24px);
+  }
+  
+  .notification-settings, .login-methods {
+    background-color: #f9fafb;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+  }
+  
+  .two-factor {
+    margin-bottom: 20px;
+  }
+  
+  .two-factor-button {
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .two-factor-button.enabled {
+    background-color: #ef4444;
+  }
+  
+  .two-factor-button.disabled {
+    background-color: green;
+  }
+  
+  .two-factor-button:hover {
+    opacity: 0.9;
+  }
+  
+  @media (max-width: 768px) {
+    .security-privacy-container {
+      padding: 20px;
+    }
+    
+    .security-nav {
+      flex-direction: column;
+      border-bottom: none;
+    }
+    
+    .security-nav-item {
+      border-bottom: 1px solid #e5e7eb;
+    }
+    
+    .security-nav-item.active {
+      border-left: 3px solid green;
+      border-bottom: 1px solid #e5e7eb;
+      padding-left: 17px;
+    }
+    
+    .setting-option {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .toggle-switch {
+      margin-top: 10px;
+    }
+  }

@@ -1,0 +1,244 @@
+/* ProfileSettings.css - Updated to match PaymentSettings */
+
+/* Reuse the existing PaymentSettings styles with some additions */
+.app-container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.payment-settings-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  width: 100%;
+}
+
+.payment-section {
+  margin-bottom: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.section-icon {
+  margin-right: 0.75rem;
+  color: #10b981; /* Green */
+}
+
+.section-header h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+/* Success Message */
+.success-message {
+  background-color: #ecfdf5;
+  color: #065f46;
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Avatar Styles */
+.profile-avatar-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.avatar-container {
+  position: relative;
+  margin-right: 24px;
+}
+
+.profile-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #10b981;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: 500;
+  object-fit: cover;
+}
+
+.avatar-upload {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.avatar-upload-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: green;
+  color: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.avatar-upload-label span {
+  display: none;
+}
+
+.avatar-upload-label:hover {
+  width: auto;
+  border-radius: 16px;
+  padding: 0 12px;
+}
+
+.avatar-upload-label:hover span {
+  display: inline;
+  margin-left: 6px;
+}
+
+.avatar-input {
+  display: none;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+}
+
+/* Checkbox Group */
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  accent-color: green;
+}
+
+.checkbox-group label {
+  margin: 0;
+  font-weight: normal;
+}
+
+
+.profile-info-display {
+  margin-top: 1rem;
+}
+
+.profile-info-display table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.profile-info-display th,
+.profile-info-display td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.profile-info-display th {
+  font-weight: 600;
+  background-color: #f9fafb;
+  width: 30%;
+}
+
+
+.add-payment-btn {
+  display: block;
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  background-color: rgb(17, 17, 163);
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.add-payment-btn:hover {
+  background-color: #059669;
+}
+
+.submit-payment-btn {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: green; 
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  transition: background-color 0.2s;
+}
+
+.submit-payment-btn:hover {
+  background-color: #059669;
+}
+
+.cancel-btn {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: #f3f4f6;
+  color: #4b5563;
+  border: none;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 0.75rem;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .payment-settings-container {
+    padding: 1rem;
+  }
+  
+  .profile-avatar-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .avatar-container {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+}

@@ -48,7 +48,7 @@ const Signup = () => {
       const timeout = setTimeout(() => {
         setAnimatedText(prevText => prevText + currentQuote[textIndex]);
         setTextIndex(prevIndex => prevIndex + 1);
-      }, 50); 
+      }, 35); 
       
       return () => clearTimeout(timeout);
     } else if (isTyping) {
